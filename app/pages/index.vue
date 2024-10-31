@@ -1,3 +1,5 @@
+
+
 <script setup lang="ts">
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
@@ -59,7 +61,7 @@ useSeoMeta({
         />
       </ULandingLogos>
     </ULandingHero>
-
+<!-- 
     <ULandingSection
       :title="page.features.title"
       :description="page.features.description"
@@ -75,7 +77,7 @@ useSeoMeta({
           v-bind="item"
         />
       </UPageGrid>
-    </ULandingSection>
+    </ULandingSection> -->
 
     <ULandingSection
       :title="page.pricing.title"
@@ -114,12 +116,12 @@ useSeoMeta({
       </UPageColumns>
     </ULandingSection>
 
-    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
+    <!-- <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
       <ULandingCTA
         v-bind="page.cta"
         :card="false"
       />
-    </ULandingSection>
+    </ULandingSection> -->
 
     <ULandingSection
       id="faq"

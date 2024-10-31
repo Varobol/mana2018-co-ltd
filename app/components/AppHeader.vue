@@ -8,11 +8,6 @@ const links = computed(() => [{
   icon: 'i-heroicons-cube-transparent',
   active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
 }, {
-  label: 'Pricing',
-  to: '#pricing',
-  icon: 'i-heroicons-credit-card',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
-}, {
   label: 'Testimonials',
   to: '#testimonials',
   icon: 'i-heroicons-academic-cap',
@@ -37,21 +32,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge
-        label="Landing"
-        variant="subtle"
-        class="mb-0.5"
-      />
-    </template>
-
-    <template #right>
-      <UButton
-        label="Sign in"
-        color="white"
-        variant="ghost"
-        trailing-icon="i-heroicons-arrow-right-20-solid"
-        class="hidden lg:flex"
-      />
+      <UAvatar size="sm" src="https://failfast.blob.core.windows.net/upload/Logo_manaForm.png" />
+      mana
     </template>
 
     <template #panel>
@@ -59,16 +41,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 
       <UDivider class="my-6" />
 
-      <UButton
-        label="Sign in"
-        color="white"
-        block
-        class="mb-3"
-      />
-      <UButton
-        label="Get started"
-        block
-      />
+      <UButton label="Sign in" color="white" block class="mb-3" />
+      <UButton label="Get started" block />
     </template>
   </UHeader>
 </template>
