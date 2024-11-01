@@ -22,8 +22,8 @@ const links = [{
         inactive: 'text-white dark:text-white hover:text-white dark:hover:text-white text-3xl',
       }" :links="links">
         <template #right>
-          <UButton class="m-2 w-32  h-12 place-content-center">App Store</UButton>
-          <UButton class="m-2 w-32  h-12 place-content-center">Google Pay</UButton>
+          <UButton class="m-2 w-32  h-12 place-content-center" icon="i-cib-apple">App Store</UButton>
+          <UButton class="m-2 w-32  h-12 place-content-center" icon="i-cib-google-play">Google Pay</UButton>
         </template>
       </UFooterColumns>
     </template>

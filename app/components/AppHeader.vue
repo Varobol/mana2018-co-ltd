@@ -6,12 +6,12 @@ const links = computed(() => [{
   label: 'Features',
   to: '#features',
   icon: 'i-heroicons-cube-transparent',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
+  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('testimonials')
 }, {
   label: 'Testimonials',
   to: '#testimonials',
   icon: 'i-heroicons-academic-cap',
-  active: activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('faq')
 }, {
   label: 'FAQ',
   to: '#faq',
@@ -22,7 +22,6 @@ const links = computed(() => [{
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
     document.querySelector('#features'),
-    document.querySelector('#pricing'),
     document.querySelector('#testimonials'),
     document.querySelector('#faq')
   ])
