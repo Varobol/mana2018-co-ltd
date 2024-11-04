@@ -2,17 +2,22 @@
   <div>
     <UPage>
       <UPageBody>
-        <ULandingSection class="bg-gray-200 ">
-          <UPageHero title="Simpler, Faster, Safer" :ui="{ title: 'lg:text-6xl' }"
+        <ULandingSection :ui="{ wrapper: 'py-0 sm:py-0' }" style="background-image: image-set(url(https://failfast.blob.core.windows.net/upload/Artboard3.png
+        ));">
+          <UPageHero title="Simpler Faster Safer"
+            :ui="{ wrapper: 'py-0 sm:py-0 pt-8 sm:pt-16', title: 'lg:text-9xl', description: 'lg:text-3xl' }"
             description="Experience seamless payments with Mana—no banks, no delays, just full control over your money."
-            :links="[{ label: 'JOIN NOW', color: 'red', size: 'lg' }]" align="left">
-            <img src="https://failfast.blob.core.windows.net/upload/mobilemana.png"
-              class="w-1/2 rounded-md   dark:ring-gray-700 justify-self-center " />
-            <!-- justify-self right -->
+            align="left">
+            <!-- :links="[{ label: 'JOIN NOW', size: 'lg' }]" -->
+            <template #links>
+              <UButton size="lg" class="bg-[#ed1c24]">JOIN NOW</UButton>
+            </template>
+            <img src="https://failfast.blob.core.windows.net/upload/blank_smartphone.png"
+              class="lg:h-[100%]    dark:ring-gray-700 justify-self-center " />
           </UPageHero>
         </ULandingSection>
 
-        <ULandingSection :ui="{ wrapper: 'p-9 sm:p-0 ' }" class="-mt-[128px] bg-g">
+        <ULandingSection :ui="{ wrapper: 'p-9 ' }">
           <video width="100%" height="480" controls>
             <source src="https://failfast.blob.core.windows.net/upload/VDO/manavdo.mp4" type="video/mp4">
           </video>
