@@ -28,7 +28,6 @@ const links = [{
       </UFooterColumns>
     </template>
     <template #right>
-      <UColorModeButton size="sm" />
     </template>
   </UFooter>
 </template>
