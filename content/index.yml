@@ -1,4 +1,4 @@
-title: Nuxt UI Pro - Landing template
+title: mana2018
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
   title: Build your landing in seconds
@@ -11,7 +11,7 @@ hero:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: '#features'
+      to: "#features"
       size: xl
     - label: Use this template
       icon: i-simple-icons-github
