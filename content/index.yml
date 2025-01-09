@@ -5,7 +5,7 @@ hero:
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
   headline:
     label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    to: https://www.mana2018.co.th
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
