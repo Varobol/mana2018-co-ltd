@@ -5,7 +5,7 @@ hero:
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
   headline:
     label: Made with Nuxt UI Pro
-    to: https://www.mana2018.co.th
+    to: https://failfast.blob.core.windows.net/upload/webmana/webmana.png
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
@@ -17,7 +17,7 @@ hero:
       icon: i-simple-icons-github
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/landing
+      to: https://failfast.blob.core.windows.net/upload/webmana/webmana.png
       target: _blank
 logos:
   title: Trusted by the world's best
