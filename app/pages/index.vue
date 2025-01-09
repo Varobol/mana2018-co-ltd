@@ -191,7 +191,7 @@ useSeoMeta({
   ogTitle: page.value.title,
   description: page.value.description,
   ogDescription: page.value.description,
-  ogImage: "https://failfast.blob.core.windows.net/upload/webmana/webmana.png",
+  ogImage: page.value.image,
 })
 
 </script>
