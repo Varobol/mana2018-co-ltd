@@ -12,9 +12,7 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://mana2018.co.th',
-  twitterImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterCard: 'summary_large_image'
+  ogImage: 'https://failfast.blob.core.windows.net/upload/webmana/webmana.png',
 })
 </script>
 
