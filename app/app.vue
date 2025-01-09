@@ -12,7 +12,7 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://landing-template.nuxt.dev/social-card.png',
+  ogImage: 'https://mana2018.co.th',
   twitterImage: 'https://landing-template.nuxt.dev/social-card.png',
   twitterCard: 'summary_large_image'
 })
