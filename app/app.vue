@@ -12,7 +12,9 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://failfast.blob.core.windows.net/upload/webmana/webmana.png',
+  ogImage: 'https://failfast.blob.core.windows.net/upload/Logo_manaForm.png',
+  twitterImage: 'https://failfast.blob.core.windows.net/upload/Logo_manaForm.png',
+  twitterCard: 'summary_large_image'
 })
 </script>
 
