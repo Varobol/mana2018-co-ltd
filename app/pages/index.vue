@@ -182,7 +182,7 @@ const itemsFaq = [{
   content: 'Mana is flexible and designed for both users and businesses. It offers unique features like conditional transactions and real-time payment processing, simplifying complex financial tasks without additional hassle.'
 }, {
   label: 'Is there a fee for using Mana?',
-  content: 'Mana offers competitive pricing with no hidden fees. Basic services are free for users, and businesses only pay for the features they use, ensuring cost-effective solutions.'
+  content: 'Mana offers competitive pricing with no hidden fees. Basic services are free for users, and businesses only pay for the features they use, ensuring cost-effective solutions. !'
 },
 ]
 
@@ -190,7 +190,7 @@ useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description + "!",
-  ogDescription: page.value.description + "!",
+  ogDescription: page.value.description+ "!",
   ogImage: page.value.imagelogo,
 })
 
