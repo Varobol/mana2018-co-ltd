@@ -4,7 +4,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: 'https://failfast.blob.core.windows.net/upload/Logo_manaForm.png' },
+    { rel: 'icon', href: 'https://failfast.blob.core.windows.net/upload/webmana/Logo_mana.png' },
   ],
   htmlAttrs: {
     lang: 'en'
@@ -12,8 +12,8 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://failfast.blob.core.windows.net/upload/Logo_manaForm.png',
-  twitterImage: 'https://failfast.blob.core.windows.net/upload/Logo_manaForm.png',
+  ogImage: 'https://failfast.blob.core.windows.net/upload/webmana/Logo_mana.png',
+  twitterImage: 'https://failfast.blob.core.windows.net/upload/webmana/Logo_mana.png',
   twitterCard: 'summary_large_image'
 })
 </script>
