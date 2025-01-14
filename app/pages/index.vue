@@ -189,10 +189,9 @@ const itemsFaq = [{
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
-  description: "What is mana??",
-  ogDescription: "What is mana???",
-  ogImage: "https://failfast.blob.core.windows.net/upload/webmana/Logo_manaForm.png",
-  ogImageUrl: "https://failfast.blob.core.windows.net/upload/webmana/Logo_manaForm.png",
+  description: page.value.description,
+  ogDescription: page.value.description,
+  ogImage: page.value.imagelogo,
 })
 
 </script>
