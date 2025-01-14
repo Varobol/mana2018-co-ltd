@@ -14,11 +14,15 @@ useHead({
 })
 
 useSeoMeta({
-  title: page.value.title,
+  title: page.value.title, 
   ogTitle: page.value.title,
-  description: "What is mana??",
-  ogDescription: "What is mana???",
-  ogImage: "https://failfast.blob.core.windows.net/upload/webmana/Logo_manaForm.png",
+  description: "Simpler Faster Safer",
+  ogDescription: "Simpler Faster Safer",
+  ogImage: {
+    url: "https://failfast.blob.core.windows.net/upload/webmana/Logo_manaForm.png",
+    width: 1200,
+    height: 630
+  },
   ogImageUrl: "https://failfast.blob.core.windows.net/upload/webmana/Logo_manaForm.png",
 })
 </script>
