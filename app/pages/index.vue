@@ -23,7 +23,7 @@
           </UPageHero>
         </ULandingSection>
 
-        <!-- <ULandingSection :ui="{ wrapper: 'p-0 sm:py-16' }">
+        <ULandingSection :ui="{ wrapper: 'p-0 sm:py-16' }">
           <video width="100%" height="480" controls>
             <source src="https://failfast.blob.core.windows.net/upload/webmana/vdo/manavdo.mp4" type="video/mp4">
           </video>
@@ -48,7 +48,7 @@
         <ULandingSection id="faq" title="Frequently Asked Questions"
           description="Discover how Mana helps you manage payments with ease and flexibility. Here are the most common questions.">
           <ULandingFAQ id="faq" :items="itemsFaq" multiple />
-        </ULandingSection> -->
+        </ULandingSection>
       </UPageBody>
     </UPage>
   </div>
