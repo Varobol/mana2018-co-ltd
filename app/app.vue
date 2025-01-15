@@ -12,9 +12,12 @@ useHead({
 })
 
 useSeoMeta({
+  title: 'mana2018',
+  description: 'Simpler Faster Safer',
+  ogDescription: 'Simpler Faster Safer',
   ogImage: 'https://failfast.blob.core.windows.net/upload/webmana/Logo_mana.png',
   twitterImage: 'https://failfast.blob.core.windows.net/upload/webmana/Logo_mana.png',
-  twitterCard: 'summary_large_image'
+  twitterCard: 'summary_large_image',
 })
 </script>
 
