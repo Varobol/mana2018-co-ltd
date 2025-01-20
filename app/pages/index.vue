@@ -195,11 +195,3 @@ useSeoMeta({
 })
 
 </script>
-
-<!-- <style>
-video[poster] {
-  width: 100%;
-  height: 480px;
-  object-fit: contain;
-}
-</style> -->
