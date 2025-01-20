@@ -5,6 +5,17 @@ const links = [{
     label: 'mana Application'
   }]
 }]
+
+
+const gotoIOS = async () => {
+  const storeUrl = "https://apps.apple.com/th/app/mana/id1273112680"; // Replace with the actual URL scheme of the mana app
+  window.location.href = storeUrl;
+}
+
+const gotoAndoid = async () => {
+  const storeUrl = "https://play.google.com/store/apps/details?id=thes.mana.client&pli=1"; // Replace with the actual URL scheme of the mana app
+  window.location.href = storeUrl;
+}
 </script>
 
 <template>
@@ -22,8 +33,9 @@ const links = [{
         inactive: 'text-white dark:text-white hover:text-white dark:hover:text-white text-3xl',
       }" :links="links">
         <template #right>
-          <UButton class="m-2 w-32  h-12 place-content-center" icon="i-cib-apple">App Store</UButton>
-          <UButton class="m-2 w-32  h-12 place-content-center" icon="i-cib-google-play">Google Pay</UButton>
+          <UButton class="m-2 w-32  h-12 place-content-center" icon="i-cib-apple" @click="gotoIOS">App Store</UButton>
+          <UButton class="m-2 w-32  h-12 place-content-center" icon="i-cib-google-play" @click="gotoAndoid">Google Pay
+          </UButton>
         </template>
       </UFooterColumns>
     </template>
