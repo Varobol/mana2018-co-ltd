@@ -8,12 +8,12 @@ const links = [{
 
 
 const gotoIOS = async () => {
-  const storeUrl = "https://apps.apple.com/th/app/mana/id1273112680"; // Replace with the actual URL scheme of the mana app
+  const storeUrl = "https://apps.apple.com/th/app/mana/id1273112680";
   window.location.href = storeUrl;
 }
 
 const gotoAndoid = async () => {
-  const storeUrl = "https://play.google.com/store/apps/details?id=thes.mana.client&pli=1"; // Replace with the actual URL scheme of the mana app
+  const storeUrl = "https://play.google.com/store/apps/details?id=thes.mana.client&pli=1";
   window.location.href = storeUrl;
 }
 </script>
