@@ -1,14 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxt/icon',
+    '@nuxt/iconify',
   ],
+  ssr: false,
+  icon: {
+    aliases: {
+      home: 'i-heroicons-home',
+    },
+  },
   colorMode: {
     preference: 'light'
   },
@@ -38,5 +45,7 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2024-07-11'
+  compatibilityDate: '2024-07-11',
+
+
 })
