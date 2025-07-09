@@ -50,12 +50,19 @@
           <ULandingFAQ id="faq" :items="itemsFaq" multiple />
         </ULandingSection>
       </UPageBody>
+
     </UPage>
   </div>
 </template>
 
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
+
+const route = useRoute()
+onMounted(() => {
+  console.log('Current route:', route.path);
+})
+
+// const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
 const itemFeature = ref([
   {
     "title": "Multi-Currency Wallet",

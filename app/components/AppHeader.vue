@@ -19,13 +19,16 @@ const links = computed(() => [{
   active: activeHeadings.value.includes('faq')
 }])
 
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#testimonials'),
-    document.querySelector('#faq')
-  ])
-})
+// nuxtApp.hooks.hookOnce('page:finish', () => {
+//   updateHeadings([
+//     document.querySelector('#features'),
+//     document.querySelector('#testimonials'),
+//     document.querySelector('#faq')
+//   ])
+// })
+
+
+
 </script>
 
 <template>
@@ -35,10 +38,22 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       mana
     </template>
 
+    <template #right>
+      <UButton label="ป้องกันภัยทุจริต" color="white" class="hidden lg:flex"
+        @click="$router.push('/warning'), { replace: true }" />
+    </template>
+
     <template #panel>
-      <UAsideLinks :links="links" />
+      <UAsideLinks v-if="$router.currentRoute.value.path === '/'" :links="links" />
+      <UAsideLinks v-else :links="[{
+        label: 'Home',
+        to: '/',
+        icon: 'i-heroicons-home'
+      }]" />
 
       <UDivider class="my-6" />
+      <!-- <UButton label="Sign in" color="white" block class="mb-3" /> -->
+      <UButton label="ป้องกันภัยทุจริต" color="white" block class="mb-3" @click="$router.push('/warning')" />
     </template>
   </UHeader>
 </template>
