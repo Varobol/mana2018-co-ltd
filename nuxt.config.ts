@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/icon',
-    '@nuxt/iconify',
   ],
   ssr: false,
   icon: {
